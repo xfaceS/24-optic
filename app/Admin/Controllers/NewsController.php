@@ -34,7 +34,12 @@ class NewsController extends AdminController
         // $grid->column('description', __('Description'));
         $grid->column('thumbnail', __('Thumbnail'))->image();
         $grid->column('images', __('Images'))->carousel();
+        $grid->filter(function($filter){
 
+            $filter->disableIdFilter();
+            $filter->like('name', __('Nom'));
+        
+        });
         return $grid;
     }
 
