@@ -11106,9 +11106,9 @@ UE.commands['insertimage'] = {
             var first = opt.shift();
             var floatStyle = first['floatStyle'];
             delete first['floatStyle'];
-////                img.style.border = (first.border||0) +"px solid #000";
+////                img.style.border = (first.border||0) +"px solid #221540";
 ////                img.style.margin = (first.margin||0) +"px";
-//                img.style.cssText += ';margin:' + (first.margin||0) +"px;" + 'border:' + (first.border||0) +"px solid #000";
+//                img.style.cssText += ';margin:' + (first.margin||0) +"px;" + 'border:' + (first.border||0) +"px solid #221540";
             domUtils.setAttributes(img, first);
             me.execCommand('imagefloat', floatStyle);
             if (opt.length > 0) {
@@ -11285,7 +11285,7 @@ UE.plugins['justify']=function(){
  * @param { String } value 色值(必须十六进制)
  * @example
  * ```javascript
- * editor.execCommand( 'forecolor', '#000' );
+ * editor.execCommand( 'forecolor', '#221540' );
  * ```
  */
 /**
@@ -11308,7 +11308,7 @@ UE.plugins['justify']=function(){
  * @param { String } value 色值(必须十六进制)
  * @example
  * ```javascript
- * editor.execCommand( 'backcolor', '#000' );
+ * editor.execCommand( 'backcolor', '#221540' );
  * ```
  */
 /**
@@ -11585,7 +11585,7 @@ UE.plugins['font'] = function () {
 //                    }
 //                }
 //                if(/fontborder/.test(val)){
-//                    node.setStyle('border','1px solid #000');
+//                    node.setStyle('border','1px solid #221540');
 //                    if(node.attrs['class']){
 //                        node.attrs['class'] = node.attrs['class'].replace(/fontborder/,'');
 //                    }else{
@@ -11628,7 +11628,7 @@ UE.plugins['font'] = function () {
             UE.commands[cmd] = {
                 execCommand: function (cmdName, value) {
                     value = value || (this.queryCommandState(cmdName) ? 'none' : cmdName == 'underline' ? 'underline' :
-                        cmdName == 'fontborder' ? '1px solid #000' :
+                        cmdName == 'fontborder' ? '1px solid #221540' :
                             'line-through');
                     var me = this,
                         range = this.selection.getRange(),

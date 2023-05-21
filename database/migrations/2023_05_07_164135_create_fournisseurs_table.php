@@ -16,6 +16,7 @@ class CreateFournisseursTable extends Migration
         Schema::create('fournisseurs', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
+            $table->string('slug')->nullable()->unique();
             $table->longText('description')->nullable();
             $table->string('thumbnail')->nullable();
             $table->longText('images')->nullable();

@@ -19,6 +19,7 @@ class CreateNewsTable extends Migration
             $table->foreign('category_news_id')->references('id')->on('category_news')->onDelete('cascade');
             
             $table->string('name')->nullable();
+            $table->string('slug')->nullable()->unique();
             $table->longText('description')->nullable();
             $table->string('thumbnail')->nullable();
             $table->longText('images')->nullable();

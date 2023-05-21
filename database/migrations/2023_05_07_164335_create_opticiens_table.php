@@ -17,6 +17,7 @@ class CreateOpticiensTable extends Migration
             $table->id();
             
             $table->string('name')->nullable();
+            $table->string('slug')->nullable()->unique();
             $table->longText('description')->nullable();
             $table->string('thumbnail')->nullable();
             $table->longText('images')->nullable();

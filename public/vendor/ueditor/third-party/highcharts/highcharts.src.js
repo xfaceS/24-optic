@@ -1614,7 +1614,7 @@ defaultOptions = {
 					},
 					select: {
 						fillColor: '#FFFFFF',
-						lineColor: '#000000',
+						lineColor: '#221540000',
 						lineWidth: 2
 					}
 				}
@@ -1707,7 +1707,7 @@ defaultOptions = {
 		},
 		itemHoverStyle: {
 			//cursor: 'pointer', removed as of #601
-			color: '#000'
+			color: '#221540'
 		},
 		itemHiddenStyle: {
 			color: '#CCC'
@@ -15603,7 +15603,7 @@ defaultPlotOptions.column = merge(defaultSeriesOptions, {
 		},
 		select: {
 			color: '#C0C0C0',
-			borderColor: '#000000',
+			borderColor: '#221540000',
 			shadow: false
 		}
 	},
