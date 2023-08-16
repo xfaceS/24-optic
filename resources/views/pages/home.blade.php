@@ -341,15 +341,13 @@
               </div>
             </section> --}}
             <div class="widget">
-              <a href="home.html" class="banner">
-                <img src="assets/media/content/banners/1.jpg" alt="banner" class="img-responsive center-block">
+              @foreach ($ads as $ad)
+              <a href="{{$ad->lien}}" class="banner" target="__blank">
+                <img src="{{asset('storage/'.$ad->image)}}" alt="banner" class="img-responsive center-block">
               </a>
-              <a href="home.html" class="banner">
-                <img src="assets/media/content/banners/1.jpg" alt="banner" class="img-responsive center-block">
-              </a>
-              <a href="home.html" class="banner">
-                <img src="assets/media/content/banners/1.jpg" alt="banner" class="img-responsive center-block">
-              </a>
+              @endforeach
+              
+              
             </div>
             {{-- <section class="widget">
               <h2 class="widget-title ui-title-inner text-right">stay updated</h2>

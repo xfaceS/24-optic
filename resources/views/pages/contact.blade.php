@@ -17,32 +17,32 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <div class="contacts-item"><i class="icon pe-7s-map-marker color-primary"></i>
+          {{-- <div class="contacts-item"><i class="icon pe-7s-map-marker color-primary"></i>
             <div class="decor-center bg-primary"></div>
             <div class="contacts-item__title">location</div>
             <div class="contacts-item__info">68 Central Road, Inner Ave. <br> FL 20568 - USA</div>
-          </div>
+          </div> --}}
         </div>
         <div class="col-md-3">
           <div class="contacts-item"><i class="icon pe-7s-call color-7"></i>
             <div class="decor-center bg-7"></div>
-            <div class="contacts-item__title">phone</div>
-            <div class="contacts-item__info">( +01 ) 234 567 8900 <br> 0800 1234 5678</div>
+            <div class="contacts-item__title">Telephone</div>
+            <div class="contacts-item__info">{{$contact->phone}}</div>
           </div>
         </div>
         <div class="col-md-3">
           <div class="contacts-item"><i class="icon pe-7s-mail-open-file color-13"></i>
             <div class="decor-center bg-13"></div>
-            <div class="contacts-item__title">email</div>
-            <div class="contacts-item__info">news (at) agency.org <br> news.agency (at) domain.com</div>
+            <div class="contacts-item__title">Email</div>
+            <div class="contacts-item__info">{{$contact->email}}</div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="contacts-item"><i class="icon pe-7s-clock color-3"></i>
+          {{-- <div class="contacts-item"><i class="icon pe-7s-clock color-3"></i>
             <div class="decor-center bg-3"></div>
             <div class="contacts-item__title">working hours</div>
             <div class="contacts-item__info">Mon - Fri : 9.00am to 6.00pm <br> Sat - Sun : 10.00am to 4.00pm</div>
-          </div>
+          </div> --}}
         </div>
       </div>
     </div>

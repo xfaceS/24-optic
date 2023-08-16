@@ -18,4 +18,8 @@ Route::group([
     $router->resource('news', NewsController::class);
     $router->resource('opticiens', OpticienController::class);
     $router->resource('sliders', SliderController::class);
+    $router->resource('contacts', ContactController::class);
+
+    $router->resource('advertisings', AdvertisingController::class);
+
 });
