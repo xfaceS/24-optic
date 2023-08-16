@@ -81,7 +81,7 @@ class NewsController extends AdminController
         // $form->textarea('description', __('Description'));
         $form->UEditor('description');
         $form->image('thumbnail', __('Thumbnail'))->rules(['required','image']);
-        $form->multipleImage('images', __('Images'))->rules(['required']);
+        $form->multipleImage('images', __('Images'))->creationRules(['required']);
 
         return $form;
     }

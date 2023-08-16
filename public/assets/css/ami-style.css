@@ -1,4 +1,28 @@
-.footer-padding{
-    padding-top: 20px;
-    padding-bottom: 20px;
+.footer {
+    padding-top: 30px !important;
+}
+
+@media only screen and (max-width: 400px) {
+    .header-main__links{
+        display: block;
+        background-color: rgba(2,2,2,0.9);
+        color: white;
+        width: 100%;
+    }
+
+    .header-main__links i{
+        color: white;
+        margin-right: 10px;
+    }
+
+    /* .logo__img.ami{
+        display: inline;
+        width: 100px;
+    } */
+}
+
+@media only screen and (min-width: 401px) {
+    .header-main__links{
+        display: none;
+    }
 }

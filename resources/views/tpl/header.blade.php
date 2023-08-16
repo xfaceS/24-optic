@@ -1,101 +1,63 @@
-<header>
-    <!-- Header Start -->
-   <div class="header-area">
-        <div class="main-header ">
-            <div class="header-top black-bg d-none d-md-block">
-               <div class="container">
-                   <div class="col-xl-12">
-                        <div class="row d-flex justify-content-between align-items-center">
-                            <div class="header-info-left">
-                                <ul>     
-                                    <li><img src="assets/img/icon/header_icon1.png" alt="">email@email.com </li>
-                                    <li><img src="assets/img/icon/header_icon1.png" alt="">{{\Carbon\Carbon::now()->toFormattedDateString()}}</li>
-                                </ul>
-                            </div>
-                            <div class="header-info-right">
-                                <ul class="header-social">    
-                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+<nav class="navbar yamm">
+    <div id="navbar-collapse-1" class="navbar-collapse collapse">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="nav navbar-nav">
+              <li>
+                  <a href="{{route('home')}}">Accueil</a>
+              </li>
+              <li>
+                <a href="{{route('about-us')}}">Qui somme nous</a>
+              </li>
+              <li>
+                <a href="#">Categories</a>
+                <ul class="dropdown-menu">
 
-                                </ul>
-                            </div>
-                        </div>
-                   </div>
-               </div>
-            </div>
-            <div class="header-mid d-none d-md-block">
-               <div class="container">
-                    <div class="row d-flex align-items-center">
-                        <!-- Logo -->
-                        <div class="col-xl-3 col-lg-3 col-md-3">
-                            <div class="logo">
-                                <a href="{{route('home')}}"><img src="{{asset('assets/img/logo/logo.png')}}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-xl-9 col-lg-9 col-md-9">
-                            <div class="header-banner f-right ">
-                                <img src="assets/img/hero/header_card.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-               </div>
-            </div>
-           <div class="header-bottom header-sticky">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
-                            <!-- sticky -->
-                                <div class="sticky-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                                </div>
-                            <!-- Main-menu -->
-                            <div class="main-menu d-none d-md-block">
-                                <nav>                  
-                                    <ul id="navigation">    
-                                        <li><a href="#">Accueil</a></li>
-                                        <li><a href="#">Magasins d'optique</a></li>
-                                        <li><a href="#">Actualités</a></li>
-                                        <li><a href="#">Marques</a></li>
-                                        <li><a href="#">Fournisseurs</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        {{-- <li><a href="index.html">Home</a></li>
-                                        <li><a href="categori.html">Category</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="latest_news.html">Latest News</a></li>
-                                        <li><a href="contact.html">Contact</a></li> --}}
-                                        {{-- <li><a href="#">Pages</a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">Element</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="single-blog.html">Blog Details</a></li>
-                                                <li><a href="details.html">Categori Details</a></li>
-                                            </ul>
-                                        </li> --}}
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>             
-                        <div class="col-xl-2 col-lg-2 col-md-4">
-                            <div class="header-right-btn f-right d-none d-lg-block">
-                                <i class="fas fa-search special-tag"></i>
-                                <div class="search-box">
-                                    <form action="#">
-                                        <input type="text" placeholder="Search">
-                                        
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Mobile Menu -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-md-none"></div>
-                        </div>
-                    </div>
-                </div>
-           </div>
+                  <li>
+                    <a href="#">Cat 1 </a>
+                  </li>
+                  <li>
+                    <a href="#">Cat 1 </a>
+                  </li>
+                  <li>
+                    <a href="#">Cat 1 </a>
+                  </li>
+                  <li>
+                    <a href="#">Cat 1 </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="{{route('magasins.index')}}">Magasin d'optiques</a>
+              </li>
+              <li>
+                <a href="{{route('news.index')}}">News d'optiques</a>
+              </li>
+
+              <li>
+                <a href="{{route('contact')}}">Contact</a>
+              </li>
+              
+            </ul>
+          </div>
         </div>
-   </div>
-    <!-- Header End -->
-</header>
+      </div>
+    </div>
+    {{-- <div class="header-search">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+            <div class="navbar-search">
+              <form class="search-global">
+                <input type="text" placeholder="Type to search" autocomplete="off" name="s" value="" class="search-global__input"/>
+                <button class="search-global__btn"><i class="icon fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="search-close close"><i class="fa fa-times"></i></button>
+    </div> --}}
+</nav>
+
