@@ -65,7 +65,7 @@ class ContactController extends AdminController
     {
         $form = new Form(new Contact());
 
-        $form->mobile('phone', __('Phone'));
+        $form->text('phone', __('Phone'));
         $form->text('adress', __('Adress'));
         $form->email('email', __('Email'));
 

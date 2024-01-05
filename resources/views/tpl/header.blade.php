@@ -10,24 +10,7 @@
               <li>
                 <a href="{{route('about-us')}}">Qui somme nous</a>
               </li>
-              <li>
-                <a href="#">Categories</a>
-                <ul class="dropdown-menu">
-
-                  <li>
-                    <a href="#">Cat 1 </a>
-                  </li>
-                  <li>
-                    <a href="#">Cat 1 </a>
-                  </li>
-                  <li>
-                    <a href="#">Cat 1 </a>
-                  </li>
-                  <li>
-                    <a href="#">Cat 1 </a>
-                  </li>
-                </ul>
-              </li>
+              
               <li>
                 <a href="{{route('magasins.index')}}">Magasin d'optiques</a>
               </li>

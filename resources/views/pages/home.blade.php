@@ -26,80 +26,22 @@
      
     </div>
   </div>
-  {{-- <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <section class="section-type-a wow">
-          <div class="wrap-title-bg">
-            <h2 class="ui-title-bg">Latest from categories</h2>
-          </div>
-          <div data-min480="1" data-min768="2" data-min992="2" data-min1200="4" data-pagination="false" data-navigation="true" data-auto-play="4000" data-stop-on-hover="true" class="owl-carousel owl-theme enable-owl-carousel">
-            <article class="post post-1 clearfix">
-              <div class="entry-media"><a href="assets/media/content/post/285x300/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/285x300/1.jpg" alt="Foto" class="img-responsive"/></a>
-                <h2 class="entry-title">Lorem ipsum dolor sit amet</h2>
-              </div><span class="label bg-1">politics</span>
-              <div class="entry-meta"><span class="entry-meta__item"><a href="news_details-1.html" class="entry-meta__link">feb 30, 2016</a></span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i>62</span></div>
-            </article>
-            <article class="post post-1 clearfix">
-              <div class="entry-media"><a href="assets/media/content/post/285x300/2.jpg" class="prettyPhoto"><img src="assets/media/content/post/285x300/2.jpg" alt="Foto" class="img-responsive"/></a>
-                <h2 class="entry-title">elit sed eiusmod tempor</h2>
-              </div><span class="label bg-2">technology</span>
-              <div class="entry-meta"><span class="entry-meta__item"><a href="news_details-1.html" class="entry-meta__link">feb 30, 2016</a></span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i>24</span></div>
-            </article>
-            <article class="post post-1 clearfix">
-              <div class="entry-media"><a href="assets/media/content/post/285x300/3.jpg" class="prettyPhoto"><img src="assets/media/content/post/285x300/3.jpg" alt="Foto" class="img-responsive"/></a>
-                <h2 class="entry-title">dolore magna aliqua Ut enim</h2>
-              </div><span class="label bg-5">world</span>
-              <div class="entry-meta"><span class="entry-meta__item"><a href="news_details-1.html" class="entry-meta__link">feb 30, 2016</a></span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i>47</span></div>
-            </article>
-            <article class="post post-1 clearfix">
-              <div class="entry-media"><a href="assets/media/content/post/285x300/4.jpg" class="prettyPhoto"><img src="assets/media/content/post/285x300/4.jpg" alt="Foto" class="img-responsive"/></a>
-                <h2 class="entry-title">ullamco laboris nisi aliquip</h2>
-              </div><span class="label bg-7">health</span>
-              <div class="entry-meta"><span class="entry-meta__item"><a href="news_details-1.html" class="entry-meta__link">feb 30, 2016</a></span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i>85</span></div>
-            </article>
-          </div>
-        </section>
-      </div>
-    </div>
-  </div> --}}
+
   <div class="section-type-c wow">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-9">
           <section class="section-area">
             <h2 class="ui-title-block">
               <span class="ui-title-block__subtitle">Explorez le sommet</span>
-              {{-- <span class="text-uppercase">news makers</span> --}}
             </h2>
-            {{-- <ul class="nav nav-tabs">
-              <li class="tabs-label">Filter Content by</li>
-              <li class="active"><a href="#tab-1" data-toggle="tab">Latest</a></li>
-              <li><a href="#tab-2" data-toggle="tab">Previous Week</a></li>
-              <li><a href="#tab-3" data-toggle="tab">HOT articles</a></li>
-              <li><a href="#tab-4" data-toggle="tab">highest rated</a></li>
-            </ul> --}}
+           
             <div class="tab-content">
               <div id="tab-1" class="tab-pane fade in active">
                 <div class="row">
-                  {{-- <div class="col-md-6">
-                    <article class="post post-2 post-2_mod-d clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/360x300/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/360x300/1.jpg" alt="Foto" class="img-responsive"/></a><span class="label bg-6">travel</span>
-                      </div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title text-uppercase">Lorem ipsum dolor amt elit sed tempor incidunt</h2>
-                        </div>
-                        <div class="entry-meta"><span class="entry-meta__item">By<a href="news_details-1.html" class="entry-meta__link"> john sina</a></span><span class="entry-meta__item"><a href="news_details-1.html" class="entry-meta__link">15 mins ago</a></span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">23</a></span></div>
-                        <div class="entry-content">
-                          <p>Lorem ipsum dolor amet consectetur adipisicing elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enimad minim veniam quis nostruda exercitation ullamco laboris onsequat duis aute irue dolorin voluptate velit esse cillum ...</p>
-                        </div>
-                        <div class="entry-footer"><a href="news_details-1.html" class="btn-link">Continue Reading</a></div>
-                      </div>
-                    </article>
-                  </div> --}}
-                  <div class="col-md-12">
-                    @foreach ($news as $new)
+                  @foreach ($news as $new)
+                  <div class="col-md-4">
+                    
                       <article class="post post-3 post-3_mod-a clearfix">
                         <div class="entry-media"><a href="{{asset('storage/'.$new->thumbnail)}}" class="prettyPhoto"><img src="{{asset('storage/'.$new->thumbnail)}}" alt="{{$new->thumbnail}}" class="img-responsive"/></a></div>
                         <div class="entry-main">
@@ -107,7 +49,7 @@
                             <h2 class="entry-title"><a href="{{route('news.show',$new->slug)}}">{{$new->name}}</a></h2>
                           </div>
                           <div class="entry-meta">
-                            <span class="category color-4">{{$new->category_name}}</span>
+                            {{-- <span class="category color-4">{{$new->category_name}}</span> --}}
                             {{-- <span class="entry-meta__item">
                               <i class="icon pe-7s-comment"></i>
                               <a href="news_details-1.html" class="entry-meta__link">6</a>
@@ -115,236 +57,29 @@
                           </div>
                         </div>
                       </article>
-                    @endforeach
-                    
-                   
                     
                   </div>
+                  @endforeach
                 </div>
               </div>
-              {{-- <div id="tab-2" class="tab-pane fade">
-                <div class="row">
-                  <div class="col-md-6">
-                    <article class="post post-2 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/360x300/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/360x300/1.jpg" alt="Foto" class="img-responsive"/></a><span class="label bg-6">travel</span>
-                      </div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title text-uppercase">Lorem ipsum dolor amt elit sed tempor incidunt</h2>
-                        </div>
-                        <div class="entry-meta"><span class="entry-meta__item">By<a href="news_details-1.html" class="entry-meta__link"> john sina</a></span><span class="entry-meta__item"><a href="news_details-1.html" class="entry-meta__link">15 mins ago</a></span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">23</a></span></div>
-                        <div class="entry-content">
-                          <p>Lorem ipsum dolor amet consectetur adipisicing elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enimad minim veniam quis nostruda exercitation ullamco laboris onsequat duis aute irue dolorin voluptate velit esse cillum ...</p>
-                        </div>
-                        <div class="entry-footer"><a href="news_details-1.html" class="btn-link">Continue Reading</a></div>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col-md-6">
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/1.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Incididunt ulabore dolore malnu alikua</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-4">entertainment</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">6</a></span></div>
-                      </div>
-                    </article>
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/2.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/2.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Aliquip exea comod rure nsekuat duis</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-7">health</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">45</a></span></div>
-                      </div>
-                    </article>
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/3.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/3.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Perspiciatis unde omnist enatus error sit</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-5">world</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">81</a></span></div>
-                      </div>
-                    </article>
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/4.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/4.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Volupta tem acusa ntium dolore me laud</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-4">sports</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">48</a></span></div>
-                      </div>
-                    </article>
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/5.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/5.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Aliquip exea comod rure nsewuat duis</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-12">technology</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">12</a></span></div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <div id="tab-3" class="tab-pane fade">
-                <div class="row">
-                  <div class="col-md-6">
-                    <article class="post post-2 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/360x300/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/360x300/1.jpg" alt="Foto" class="img-responsive"/></a><span class="label bg-6">travel</span>
-                      </div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title text-uppercase">Lorem ipsum dolor amt elit sed tempor incidunt</h2>
-                        </div>
-                        <div class="entry-meta"><span class="entry-meta__item">By<a href="news_details-1.html" class="entry-meta__link"> john sina</a></span><span class="entry-meta__item"><a href="news_details-1.html" class="entry-meta__link">15 mins ago</a></span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">23</a></span></div>
-                        <div class="entry-content">
-                          <p>Lorem ipsum dolor amet consectetur adipisicing elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enimad minim veniam quis nostruda exercitation ullamco laboris onsequat duis aute irue dolorin voluptate velit esse cillum ...</p>
-                        </div>
-                        <div class="entry-footer"><a href="news_details-1.html" class="btn-link">Continue Reading</a></div>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col-md-6">
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/1.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Incididunt ulabore dolore malnu alikua</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-4">entertainment</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">6</a></span></div>
-                      </div>
-                    </article>
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/2.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/2.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Aliquip exea comod rure nsekuat duis</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-7">health</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">45</a></span></div>
-                      </div>
-                    </article>
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/3.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/3.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Perspiciatis unde omnist enatus error sit</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-5">world</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">81</a></span></div>
-                      </div>
-                    </article>
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/4.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/4.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Volupta tem acusa ntium dolore me laud</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-4">sports</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">48</a></span></div>
-                      </div>
-                    </article>
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/5.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/5.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Aliquip exea comod rure nsewuat duis</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-12">technology</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">12</a></span></div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <div id="tab-4" class="tab-pane fade">
-                <div class="row">
-                  <div class="col-md-6">
-                    <article class="post post-2 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/360x300/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/360x300/1.jpg" alt="Foto" class="img-responsive"/></a><span class="label bg-6">travel</span>
-                      </div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title text-uppercase">Lorem ipsum dolor amt elit sed tempor incidunt</h2>
-                        </div>
-                        <div class="entry-meta"><span class="entry-meta__item">By<a href="news_details-1.html" class="entry-meta__link"> john sina</a></span><span class="entry-meta__item"><a href="news_details-1.html" class="entry-meta__link">15 mins ago</a></span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">23</a></span></div>
-                        <div class="entry-content">
-                          <p>Lorem ipsum dolor amet consectetur adipisicing elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enimad minim veniam quis nostruda exercitation ullamco laboris onsequat duis aute irue dolorin voluptate velit esse cillum ...</p>
-                        </div>
-                        <div class="entry-footer"><a href="news_details-1.html" class="btn-link">Continue Reading</a></div>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col-md-6">
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/1.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Incididunt ulabore dolore malnu alikua</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-4">entertainment</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">6</a></span></div>
-                      </div>
-                    </article>
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/2.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/2.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Aliquip exea comod rure nsekuat duis</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-7">health</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">45</a></span></div>
-                      </div>
-                    </article>
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/3.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/3.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Perspiciatis unde omnist enatus error sit</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-5">world</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">81</a></span></div>
-                      </div>
-                    </article>
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/4.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/4.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Volupta tem acusa ntium dolore me laud</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-4">sports</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">48</a></span></div>
-                      </div>
-                    </article>
-                    <article class="post post-3 clearfix">
-                      <div class="entry-media"><a href="assets/media/content/post/100x100/5.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x100/5.jpg" alt="Foto" class="img-responsive"/></a></div>
-                      <div class="entry-main">
-                        <div class="entry-header">
-                          <h2 class="entry-title"><a href="news_details-1.html">Aliquip exea comod rure nsewuat duis</a></h2>
-                        </div>
-                        <div class="entry-meta"><span class="category color-12">technology</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">12</a></span></div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div> --}}
+
             </div>
           </section>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <aside class="sidebar">
-            {{-- <section class="widget">
-              <h2 class="widget-title ui-title-inner text-right">Suivez-nous</h2>
-              <div class="decor-right"></div>
-              <div class="widget-content">
-                <ul class="list-subscription list-unstyled">
-                  <li class="list-subscription__item bg-11"><span class="list-subscription__name">Rss</span><span class="list-subscription__number">164.983</span> followers<a href="rss.com" class="list-subscription__link"><i class="icon fa fa-rss"></i></a></li>
-                  <li class="list-subscription__item bg-8"><span class="list-subscription__name">TW</span><span class="list-subscription__number">714,967</span> followers<a href="twitter.com" class="list-subscription__link"><i class="icon fa fa-twitter"></i></a></li>
-                  <li class="list-subscription__item bg-9"><span class="list-subscription__name">FB</span><span class="list-subscription__number">250,642</span> likes<a href="facebook.com" class="list-subscription__link"><i class="icon fa fa-facebook"></i></a></li>
-                  <li class="list-subscription__item bg-10"><span class="list-subscription__name">yt</span><span class="list-subscription__number">920,497</span> subscribers<a href="youtube.com" class="list-subscription__link"><i class="icon fa fa-youtube-play"></i></a></li>
-                </ul>
-              </div>
-            </section> --}}
+            
             <div class="widget">
+              @if ($ads->count() > 0)
+              <h2 class="ui-title-block">
+                <span class="ui-title-block__subtitle">Notre sponsore</span>
+              </h2>
+              @endif
+              
               @foreach ($ads as $ad)
-              <a href="{{$ad->lien}}" class="banner" target="__blank">
-                <img src="{{asset('storage/'.$ad->image)}}" alt="banner" class="img-responsive center-block">
-              </a>
+                <a href="{{$ad->lien}}" class="banner mb-1" target="__blank">
+                  <img src="{{asset('storage/'.$ad->image)}}" alt="banner" class="w-100 center-block d-block">
+                </a>
               @endforeach
               
               

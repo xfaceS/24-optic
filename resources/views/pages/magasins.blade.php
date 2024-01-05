@@ -17,13 +17,13 @@
             @foreach ($opticiens as $item)
                 <article class="post post-5 clearfix">
                     <div class="entry-media">
-                        <a href="assets/media/content/post/340x310/1.jpg" class="prettyPhoto">
-                            <img src="assets/media/content/post/340x310/1.jpg" alt="Foto" class="img-responsive"/>
+                        <a href="{{asset('storage/'.$item->thumbnail)}}" class="prettyPhoto">
+                            <img src="{{asset('storage/'.$item->thumbnail)}}" alt="Foto" class="img-responsive"/>
                         </a>
                     </div>
                     <div class="entry-main">
                         <div class="entry-header"><span class="category color-4">{{$item->category_name}}</span>
-                            <h2 class="entry-title"><a href="news_details-1.html">{{$item->name}}</a></h2>
+                            <h2 class="entry-title"><a href="{{route('magasins.show',$item->slug)}}">{{$item->name}}</a></h2>
                         </div>
                         <div class="entry-meta">
                             <span class="entry-meta__item">

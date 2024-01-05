@@ -4,9 +4,11 @@
         <div class="row">
           <div class="col-xs-12">
             <div class="top-header__link bg-primary">
-              <div class="top-header__wrap-link">top headlines<i class="icon fa fa-caret-right"></i></div>
+              <div class="top-header__wrap-link">
+                {{-- top headlines<i class="icon fa fa-caret-right"></i> --}}
+              </div>
             </div>
-            <div class="top-header__ticker">
+            {{-- <div class="top-header__ticker">
               <ul id="myUl">
                 <li class="news-item"><a href="news_details-1.html" class="news-item__link">Uber offers $29m 'safe ride' settlement</a><i class="icon fa fa-adjust"></i></li>
                 <li class="news-item"><a href="news_details-1.html" class="news-item__link">The robot that camouflages itself</a><i class="icon fa fa-adjust"></i></li>
@@ -15,7 +17,7 @@
                 <li class="news-item"><a href="news_details-1.html" class="news-item__link">The robot that camouflages itself</a><i class="icon fa fa-adjust"></i></li>
                 <li class="news-item"><a href="news_details-1.html" class="news-item__link">Luxury cars at the Detroit auto show</a><i class="icon fa fa-adjust"></i></li>
               </ul>
-            </div>
+            </div> --}}
           </div>
         </div>
       </div>
@@ -51,4 +53,4 @@
         </div>
       </div>
     </div>
-  </header>
+</header>

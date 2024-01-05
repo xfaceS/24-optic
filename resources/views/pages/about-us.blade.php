@@ -17,7 +17,9 @@
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
         <div class="section-type-a">
-          <div class="ui-description ui-description_mod-a text-center">Aliquip exea comod rure nsewuat duis Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididun labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</div>
+          <div class="ui-description ui-description_mod-a text-center">
+            Votre plateforme offre une opportunité précieuse de connecter les opticiens et les clients au Maroc. En mettant en avant l'actualité de l'optique, vous favorisez non seulement l'accès aux services des opticiens pour les clients, mais vous créez également un espace où les opticiens peuvent mieux faire connaître leur profession et valoriser leur expertise. Cette plateforme contribue ainsi à renforcer le lien entre les professionnels de l'optique et leur clientèle, tout en promouvant la profession elle-même.  cette démarche innovante !
+          </div>
         </div>
       </div>
       <div class="col-md-4 col-md-offset-4">
@@ -33,15 +35,14 @@
         </div>
         <div class="col-md-6">
           <section class="section_mod-a">
-            <h2 class="ui-title-block ui-title-block_font-sm text-uppercase">Lorem ipsum dolor amt elit sed tempor incidunt sed nostrud</h2>
-            <p>Lorem ipsum dolor amet consectetur adipisicing elit sed do eiusmod tempor incid dunt labore et dolore magna aliqua enimad minim.</p>
+            <h2 class="ui-title-block ui-title-block_font-sm text-uppercase">Notre Mission</h2>
+            <p>Nous visons à créer un espace d'échange dynamique, facilitant la découverte des dernières nouveautés du domaine et favorisant une expérience optique enrichissante.</p>
             <ul class="list list-mark-1">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-              <li>Elit sed do eiusmod tempor incididunt ut labore et dolore</li>
-              <li>Nostrud exercitation ullamco laboris nisi ut aliquip</li>
-              <li>Commodo consequat duis aute irure dolor inc</li>
-              <li>Cupidatat non proident sunt in culpa qui</li>
-            </ul><a class="btn-link">Contact us</a>
+              <li>Trouvez votre Opticien Idéal sur Google : Découvrez Services, Avis et Horaires d'Opticiens près de chez Vous !</li>
+              <li>Découvrez les Dernières Innovations en Optique : Les Nouveautés qui Transforment Votre Vision !</li>
+              <li>À l'Écoute de Vos Questions en Optique : Notre Engagement à Répondre à Toutes vos Interrogations !</li>
+              <li>Simplicité de Contact Opticien-Client : Notre Plateforme Facilite la Rencontre pour un Service Optique Personnalisé !</li>
+            </ul><a class="btn-link" href="{{route('contact')}}">Contact us</a>
           </section>
         </div>
       </div>

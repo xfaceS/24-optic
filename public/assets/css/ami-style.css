@@ -2,6 +2,26 @@
     padding-top: 30px !important;
 }
 
+.yamm{
+    height: 95px;
+    background-color: black;
+}
+
+.section-type-k{
+    padding-top: 140px;
+}
+
+.w-100{
+    width: 100%;
+}
+.mb-1{
+    margin-bottom: 10px;
+}
+
+.top-header__link{
+    width: 100%;
+}
+
 @media only screen and (max-width: 400px) {
     .header-main__links{
         display: block;

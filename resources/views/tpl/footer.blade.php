@@ -6,7 +6,9 @@
             <a href="home.html" class="footer__logo" style="width:100%; text-align:center;">
               <img src="{{asset('assets/img/logo-white.png')}}" alt="logo" class="">
             </a>
-            <div class="footer__info" style="text-align: center;">Lorem ipsum dolor amet consecteu adipisicing sed do eiusmod tempor incididunt labore dolore magna aliqua enimad minim tempor incididunt labore et dolore magna aliqua.</div>
+            <div class="footer__info" style="text-align: justify;">
+              Votre plateforme offre une opportunité précieuse de connecter les opticiens et les clients au Maroc. En mettant en avant l'actualité de l'optique, vous favorisez non seulement l'accès aux services des opticiens pour les clients, mais vous créez également un espace où les opticiens peuvent mieux faire connaître leur profession et valoriser leur expertise. Cette plateforme contribue ainsi à renforcer le lien entre les professionnels de l'optique et leur clientèle, tout en promouvant la profession elle-même.  cette démarche innovante !
+            </div>
             <div class="decor-right decor-right_sm"></div>
           </div>
         </div>

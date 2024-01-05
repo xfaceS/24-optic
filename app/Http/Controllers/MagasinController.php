@@ -14,6 +14,8 @@ class MagasinController extends Controller
         }else{
             $opticiens = Opticien::orderBy('created_at','desc')->paginate(15);
         }
+
+        // dd($opticiens);
         
         return view('pages.magasins',compact('opticiens'));
     }
